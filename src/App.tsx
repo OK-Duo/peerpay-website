@@ -9,7 +9,7 @@ const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
-    <div className="flex flex-col h-screen text-textColor bg-backgroundColor">
+    <div className="flex flex-col h-screen">
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Home />} />
