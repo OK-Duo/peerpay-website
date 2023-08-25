@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import "./styles/default.css";
 
 import Loading from "./pages/Loading";
+import NavBar from "./components/NavBar";
 
 // * Import Here Any Page Component
 const Home = lazy(() => import("./pages/Home"));
@@ -10,6 +11,7 @@ const Home = lazy(() => import("./pages/Home"));
 const App = () => {
   return (
     <div className="flex flex-col h-screen">
+      <NavBar />
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Home />} />
