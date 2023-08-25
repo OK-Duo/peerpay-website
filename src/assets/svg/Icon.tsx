@@ -2,12 +2,7 @@ import React from "react";
 
 const Icon = () => {
   return (
-    <svg
-    className="w-8 h-8"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      fill="none"
-      viewBox="0 0 215 215">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 215 215">
       <path fill="url(#pattern0)" d="M0 0H215V215H0z"></path>
       <defs>
         <pattern id="pattern0" width="1" height="1" patternContentUnits="objectBoundingBox">
@@ -23,4 +18,4 @@ const Icon = () => {
   );
 };
 
-export default Icon
+export default Icon;
