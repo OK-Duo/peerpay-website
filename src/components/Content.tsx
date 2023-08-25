@@ -26,16 +26,16 @@ const Content = () => {
         Send, receive, and swap cryptocurrencies and NFTs
         <br /> using your social media handles.
       </p>
-      <div className="flex flex-col p-1 items-start whitespace-nowrap">
+      <div className="flex flex-col items-start whitespace-nowrap p-1">
         <form className="w-full font-semibold">
-          <input type="text" placeholder="Enter your email..." className="rounded-s-lg bg-zinc-800 px-6 h-12" />
-          <button className="bg-zinc-200 rounded-e-lg px-2 h-12 text-zinc-800 w-auto">Sign Up</button>
+          <input type="text" placeholder="Enter your email..." className="h-12 rounded-s-lg bg-zinc-800 px-6" />
+          <button className="h-12 w-auto rounded-e-lg bg-zinc-200 px-2 text-zinc-800">Sign Up</button>
         </form>
         <div className="w-full py-1">
           {buttons.map((button) => {
             return (
               <Link key={button.text} to={button.link} target="_blank" rel="noreferrer">
-                <button className="bg-primary rounded-md text-zinc-800 mx-0.5 text-lg w-[110px] h-12 leading-4 whitespace-normal">
+                <button className="mx-0.5 h-12 w-[110px] whitespace-normal rounded-md bg-primary text-lg leading-4 text-zinc-800">
                   {button.text}
                 </button>
               </Link>

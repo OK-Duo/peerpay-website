@@ -30,19 +30,19 @@ const NavBar = () => {
     },
   ];
   return (
-    <header className="w-full z-20 top-0 flex items-center py-4 px-4 sm:px-6 md:px-8">
-      <div className="mx-auto container flex items-center justify-between">
+    <header className="top-0 z-20 flex w-full items-center px-4 py-4 sm:px-6 md:px-8">
+      <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center justify-center">
-          <span className="w-9 h-9 mr-[0.35rem]">
+          <span className="mr-[0.35rem] h-9 w-9">
             <Icon />
           </span>
-          <h1 className="text-primary font-bold text-xl hidden sm:block">peerpay</h1>
+          <h1 className="hidden text-xl font-bold text-primary sm:block">peerpay</h1>
         </div>
         <nav>
           <ul className="flex items-center justify-around">
             {socialLinks.map((link) => {
               return (
-                <li key={link.name} className="w-6 h-6 mx-1 sm:mx-1.5">
+                <li key={link.name} className="mx-1 h-6 w-6 sm:mx-1.5">
                   <Link to={link.link} target="_blank" rel="noreferrer">
                     <span className="sr-only">{link.name}</span>
                     {link.icon}

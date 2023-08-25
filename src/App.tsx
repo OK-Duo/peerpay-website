@@ -10,7 +10,7 @@ const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       <NavBar />
       <Suspense fallback={<Loading />}>
         <Routes>
