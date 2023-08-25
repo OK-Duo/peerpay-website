@@ -10,22 +10,22 @@ const NavBar = () => {
   const socialLinks = [
     {
       name: "Telegram",
-      link: "https://web.telegram.org",
+      link: "https://t.me/OrinHazan",
       icon: <TelegramIcon />,
     },
     {
       name: "Twitter",
-      link: "https://twitter.com",
+      link: "https://twitter.com/peerpay_app",
       icon: <TwitterIcon />,
     },
     {
       name: "Linkedin",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/orin-hazan-b640b0271/",
       icon: <LinkedinIcon />,
     },
     {
       name: "Github",
-      link: "https://github.com",
+      link: "https://github.com/PeerpayApp",
       icon: <GithubIcon />,
     },
   ];
