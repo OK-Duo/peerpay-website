@@ -3,7 +3,7 @@ import Content from "../components/Content";
 
 const Home = () => {
   return (
-    <div className="text-primary">
+    <div className="w-full">
       <Content />
     </div>
   );

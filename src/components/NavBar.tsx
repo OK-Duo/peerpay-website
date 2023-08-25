@@ -39,11 +39,11 @@ const NavBar = () => {
           <h1 className="text-primary font-bold text-xl hidden sm:block">peerpay</h1>
         </div>
         <nav>
-          <ul className="flex items-center justify-around text-slate-300">
+          <ul className="flex items-center justify-around">
             {socialLinks.map((link) => {
               return (
                 <li key={link.name} className="w-6 h-6 mx-1 sm:mx-1.5">
-                  <Link to={link.link} target="_blank">
+                  <Link to={link.link} target="_blank" rel="noreferrer">
                     <span className="sr-only">{link.name}</span>
                     {link.icon}
                   </Link>
